@@ -1,6 +1,6 @@
 # MyVisualNovel
 
-`MyVisualNovel` is a Ren'Py visual novel project. The supported engine is **Ren'Py 8.5.3**, and Windows is the initial development and release target. The repository currently preserves the stock generated project as its baseline; real story production begins with the M1 vertical slice.
+`MyVisualNovel` is the working repository identity for a documentary-style interactive true-crime anthology; the final product title remains TBD. The supported engine is **Ren'Py 8.5.3**, and Windows is the initial development and release target. M1 implements one clearly fictional composite prototype case, `The Red Umbrella`, to prove the format before any researched real-case production.
 
 ## Repository layout
 
@@ -38,7 +38,6 @@ The scripts prefer the SDK's bundled Windows Python and fall back to `python.exe
 - [Current status](docs/STATUS.md)
 - [Decision log](docs/DECISIONS.md)
 
-## First production milestone
+## Current vertical slice
 
-M1 is a focused 5–15 minute playable vertical slice proving the complete player path and production workflow: start flow, visuals, audio, dialogue, a meaningful stateful choice, convergence or a small ending, stock save/load/rollback, an automated flow test, lint, and runtime validation. It should validate the VN pipeline without becoming a general-purpose framework.
-
+M1 provides a focused 10–15 minute flow: world-map selection, victim-perspective ordinary life, a restrained incident threshold and discovery, evidence/timeline interpretation, resolution, memorial, and return to the map. It uses only labeled Ren'Py-native visual placeholders and no third-party crime media. Engine lint, automated-test syntax, and runtime validation remain blocked until `RENPY_SDK` is configured.

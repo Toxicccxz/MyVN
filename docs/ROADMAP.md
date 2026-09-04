@@ -2,7 +2,7 @@
 
 ## M0 — Repository and Ren'Py Foundation
 
-**Status:** Foundation implemented; SDK-backed validation pending.
+**Status:** COMPLETE (engine-backed validation remained unavailable in the M0 environment).
 
 Goals:
 
@@ -13,9 +13,11 @@ Goals:
 - Initial smoke-test foundation
 - Stable baseline
 
-The generated project and its prior successful 8.5.3 launch evidence are preserved. Repository structure, policy, documentation, and scripts are in place. Current lint/test/runtime validation still requires a configured `RENPY_SDK`.
+The generated project baseline, repository structure, policy, documentation, and Windows scripts are in place. The limitation of the original validation environment remains recorded in project status history.
 
 ## M1 — Playable Vertical Slice
+
+**Status:** IMPLEMENTATION COMPLETE; engine lint, automated testcase, and runtime verification blocked until `RENPY_SDK` is configured.
 
 Target roughly 5–15 minutes. It must prove:
 
@@ -68,4 +70,3 @@ Eventually include:
 - Placeholder cleanup
 - Third-party asset provenance
 - Versioning and known issues
-

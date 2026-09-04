@@ -68,3 +68,25 @@ Do not force-push, merge, publish, upload a release, or modify remote/security s
 
 Engine upgrades are dedicated tasks with explicit compatibility and validation work; never change the SDK incidentally. Ren'Py 8.5.3 remains supported until such a task changes that decision.
 
+## Future real-case research boundary
+
+A documented real homicide case never enters production solely from model memory or a casual suggestion. It requires an explicit case-research task before implementation. That task must:
+
+- Perform explicit research and identify authoritative sources.
+- Separate confirmed facts from allegations, disputed accounts, speculation, and reconstruction.
+- Record important source provenance.
+- Verify names, dates, locations, legal outcomes, and disputed facts.
+- Identify whether the matter remains active or legally sensitive.
+- Consider the privacy and dignity of surviving relatives.
+- Review copyright and licensing for photographs, video, audio, court documents, and news material.
+- Avoid presenting disputed theories as established fact; conflicting evidence must be acknowledged.
+
+Codex must never silently invent real-case facts. Research approval does not automatically authorize implementation, and a newly suggested case must not be added without the explicit research step.
+
+## Media provenance
+
+Every case must distinguish authentic archival material, recreated/dramatized material, AI-generated reconstruction, and original game artwork or sound. Maintain case-level source and rights records before release.
+
+AI-generated or recreated imagery must not be presented as authentic crime-scene, police, historical press, or archival evidence. Clearly label reconstruction in context and credits. Do not use recognizable news-brand marks or layouts to imply false authenticity. When evidence provenance is uncertain, omit it or mark the gap rather than guessing.
+
+M1 contains no downloaded third-party media. Its native color panels and text are explicit development placeholders.

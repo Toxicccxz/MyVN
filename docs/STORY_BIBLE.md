@@ -1,182 +1,266 @@
 # Story Bible
 
-This document is canonical story authority. Replace `TBD` only through an authored decision. Unresolved canon is not permission for Codex to silently invent permanent facts; use a narrow placeholder or report the gap.
+This document is the canonical authority for story, world, character, tone, and continuity. `TBD` means unresolved; it is not permission for Codex to silently invent permanent canon.
 
 ## Project identity
 
 | Field | Canon |
 | --- | --- |
-| Project title | TBD |
-| Genre | TBD |
+| Final project title | TBD |
+| Genre | Documentary-style interactive visual novel / interactive true-crime anthology |
 | Primary language | TBD |
-| Target rating/content level | TBD |
-| Expected playtime | TBD |
-| Narrative structure | TBD |
+| Target rating/content level | TBD; intended for a mature audience because cases concern homicide and disturbing themes |
+| Expected playtime | Anthology scope TBD; M1 prototype case targets 10–15 minutes |
+| Narrative structure | World-map anthology of self-contained cases using victim-before-crime and investigation-after-crime perspectives |
 
-## Narrative promise
+## Core premise and intended experience
 
-- **One-sentence premise:** TBD
-- **Player fantasy / intended experience:** TBD
-- **Core themes:** TBD
-- **Tone:** TBD
-- **What the story should not become:** TBD
+The player explores a world map containing homicide cases from different countries and historical periods. Selecting a location opens a self-contained case.
 
-## World
+The intended experience is **narrative investigation + light interaction + evidence interpretation**, not a complex police simulator. The player participates in understanding the case but is not an omnipotent detective who personally performs every police action.
 
-- **Time period:** TBD
-- **Primary location:** TBD
-- **Other locations:** TBD
-- **World rules:** TBD
-- **Starting player knowledge:** TBD
-- **Hidden facts:** TBD
+### Perspective A — Before the crime
 
-## Timeline
+The player follows the victim through ordinary routines, work, relationships, mundane choices, messages, objects, places, subtle warning signs, and details that later become evidence. This perspective builds empathy and presents the victim as a person rather than a statistic. It should not treat the victim as though they know they are in a horror story.
 
-| Relative/absolute time | Event | Characters involved | Public or hidden | Notes |
-| --- | --- | --- | --- | --- |
-| TBD | TBD | TBD | TBD | TBD |
+### Perspective B — After the crime
 
-## Protagonist
+The viewpoint changes to a restrained third-person documentary reconstruction. The player follows discovery, investigation, conflicting testimony, evidence, errors, breakthroughs, and the eventual outcome or unresolved status. Interaction supports attention and comprehension rather than fantasy police procedure.
 
-| Field | Canon |
-| --- | --- |
-| Name / identifier | TBD |
-| Age | TBD |
-| Pronouns | TBD |
-| Appearance / visual traits | TBD |
-| History | TBD |
-| Motivation | TBD |
-| Personality / voice | TBD |
-| Starting relationships | TBD |
-| Starting knowledge | TBD |
-| Player-controlled qualities | TBD |
-| Non-negotiable continuity | TBD |
+## Core creative principle
 
-## Important character template
+> The victim is a person first and a case second.
 
-Copy this section for each important character.
+The project does not sell murder as spectacle. Its emotional force should come from knowing the victim before knowing the case, recognizing earlier objects as evidence, information asymmetry, delayed understanding, irony, missed opportunities, contradictory testimony, investigative breakthroughs, the contrast between ordinary life and later events, and the human consequences of violence.
 
-### TBD character
+## Canonical case structure
 
-| Field | Canon |
-| --- | --- |
-| Name / stable script identifier | TBD |
-| Age | TBD |
-| Pronouns | TBD |
-| Role | TBD |
-| Appearance / visual traits | TBD |
-| History | TBD |
-| Motivation | TBD |
-| Personality / dialogue voice | TBD |
-| Relationships | TBD |
-| Knowledge by story stage | TBD |
-| Secrets | TBD |
-| Route relevance | TBD |
-| Continuity constraints | TBD |
+```text
+World Map
+    ↓
+Case Selection
+    ↓
+Case Introduction / Content Notice
+    ↓
+Victim Perspective
+    ↓
+Incident Threshold
+    ↓
+Discovery
+    ↓
+Investigation
+    ↓
+Evidence / Timeline / Contradictions
+    ↓
+Truth or Current Best Reconstruction
+    ↓
+Judicial / Investigative Outcome
+    ↓
+Victim Memorial / Reflection
+    ↓
+Return to World Map
+```
 
-## Location template
+Scene count may vary by case, but completed cases need emotional closure and must return attention to the victim. A resolved case may emphasize accountability. An unresolved case may emphasize uncertainty, loss, and unanswered questions. Do not force a simplistic moral such as “good always wins.” A closing should normally express the idea: **Remember the person, not only the crime.**
 
-### TBD location
+## Interaction philosophy
 
-| Field | Canon |
-| --- | --- |
-| Name | TBD |
-| Purpose in story | TBD |
-| Physical/visual traits | TBD |
-| Atmosphere | TBD |
-| Access and geography | TBD |
-| Associated characters/events | TBD |
-| Continuity constraints | TBD |
+Interaction exists to increase presence, attention, memory, narrative pacing, and investigative understanding—not merely to appear game-like.
 
-## Route model
+Preferred interactions include world-map case selection, inspecting objects, opening doors or containers, checking messages or an answering machine, examining photographs, selecting evidence, reviewing a timeline, comparing testimony, identifying contradictions, and connecting earlier-life details to later evidence.
 
-- **Overall route structure:** TBD
-- **Shared-route boundaries:** TBD
-- **Lock-in rules:** TBD
-- **Branch convergence rules:** TBD
-- **Failure/dead-end policy:** TBD
+Avoid unrelated minigames and complex inventory mechanics. Historical outcomes are not game-over puzzles.
 
-### Route variables
+## Choice philosophy
 
-| Variable | Type/default | Meaning | Changed by | Used by |
-| --- | --- | --- | --- | --- |
-| TBD | TBD | TBD | TBD | TBD |
+- **Narrative attention choices:** determine what the player notices or inspects.
+- **Character-expression choices:** express personality or routine without rewriting historical outcomes.
+- **Investigation-order choices:** determine which evidence the player examines first.
+- **Interpretation choices:** ask what appears important or contradictory; errors should guide rather than punish.
+- **True branch choices:** reserved for fictional narratives or situations that genuinely diverge.
 
-## Ending template
+For documented cases, never imply that a player could casually prevent a real victim's death with a dialogue choice.
 
-### TBD ending
+## Violence presentation
 
-| Field | Canon |
-| --- | --- |
-| Semantic label | TBD |
-| Route | TBD |
-| Requirements | TBD |
-| Outcome | TBD |
-| Intended emotional effect | TBD |
-| Unlock/meta effects | TBD |
-| Follow-up continuity | TBD |
+- Graphic gore is not the attraction or default visual language.
+- Do not linger on physical killing mechanics or include unnecessary procedural detail.
+- Do not recreate prolonged assault as entertainment or create a playable murder simulation.
+- Victim-perspective sequences normally stop at or around the incident threshold.
+- Discovery may strongly imply disturbing findings without explicit anatomy.
+- Prefer sound, framing, reaction, text, omission, and aftermath to excessive visual detail.
+- Graphic material requires a later explicit decision and a clear documentary/narrative purpose.
+- The work may be emotionally disturbing where the subject requires it, but never gratuitous or gore tourism.
 
-## Chapter outline template
+## Media authenticity and provenance
 
-### TBD chapter
+Future cases may combine licensed/publicly usable authentic archival material, game-created diagrams and documents, AI-generated documentary reconstruction, original artwork/sound, and textual reconstruction. These categories must remain distinguishable in credits and case sources:
 
-- **Purpose:** TBD
-- **Starting state/knowledge:** TBD
-- **Key scenes:** TBD
-- **Meaningful choices:** TBD
-- **State changes:** TBD
-- **Required reveals:** TBD
-- **Branch/convergence:** TBD
-- **Ending state / handoff:** TBD
-- **Needed assets:** TBD
+```text
+Authentic archival material
+Recreated / dramatized material
+AI-generated reconstruction
+Original game artwork
+```
 
-## Choice-design rules
+AI or recreated imagery must never be presented as authentic crime-scene, police, press, or historical photography. Do not use recognizable news-brand layouts or marks to manufacture false authenticity.
 
-- Choices should reveal or express player intent, alter meaningful state, or materially change the experience.
-- Make consequences legible at the level appropriate to the story; do not rely on arbitrary hidden punishment.
-- Keep branches readable and converge explicitly when content rejoins.
-- Avoid false choices unless their dramatic purpose is deliberate and documented.
-- Do not duplicate large blocks of dialogue for minor conditional variations.
-- Route and ending requirements must agree with the route-variable table.
+M1 uses only clearly labeled Ren'Py-native placeholder panels. It includes no authentic archival media, third-party crime media, AI reconstruction art, or production audio.
 
-## Continuity rules
+## Documentary visual direction
 
-- Check character knowledge, chronology, location, relationships, route state, and established visual traits before writing a scene.
-- A character cannot act on information they have not learned.
-- State-changing choices must be reflected consistently in later dialogue and conditions.
-- Authored dialogue is not rewritten merely for technical cleanup.
-- Canon changes must be recorded in the log below rather than silently retconned.
+- Restrained documentary tone with late-1990s archival influence where relevant
+- Understated typography and subdued, low-gloss interface
+- Dates and locations as strong visual anchors
+- Case-file and evidence language
+- Occasional reconstruction images may be considered in future production when labeled accurately
+- Minimal flashy game UI
 
-## Visual direction
-
-- **Art style:** TBD
-- **Palette/lighting:** TBD
-- **Character presentation:** TBD
-- **Background/CG direction:** TBD
-- **UI relationship to tone:** TBD
-- **Motion/transition limits:** TBD
+Avoid blood-splatter menus, pervasive police-tape clichés, excessive glitch effects, exaggerated “serial killer wall” aesthetics, fake branded news channels, and sensational tabloid styling. The project should feel closer to an interactive documentary than arcade horror.
 
 ## Audio direction
 
-- **Music identity:** TBD
-- **Ambience:** TBD
-- **SFX approach:** TBD
-- **Voice scope:** TBD
-- **Silence/dynamic rules:** TBD
+Victim-perspective audio favors ordinary environment, rain, apartment ambience, distant traffic, answering-machine cues, and subtle music only when appropriate. Investigation audio favors restrained documentary scoring, room tone, tape playback, and understated evidence/UI sounds. Avoid repeated horror stingers.
+
+M1 references no audio files because no production assets exist. Its sound moments are conveyed textually until sourced original audio is available.
+
+## World and anthology rules
+
+- **Geographic model:** real geographic locations presented through a world-map case shell.
+- **Time periods:** may vary by case; chronology must be researched and explicit.
+- **World rules:** documentary framing must distinguish fact, inference, disputed claims, and reconstruction.
+- **Starting player knowledge:** only the case card, location/year, fictional/documented status, and content notice.
+- **Hidden facts:** case-specific; never reveal knowledge through a character who could not possess it.
+- **Full anthology scope:** TBD. No future case canon is established by M1.
+
+## M1 prototype case — The Red Umbrella
+
+### Status and boundaries
+
+`The Red Umbrella` is an internal M1 case title, not the final game title. It is a **fictional composite case** created for prototype development, set in the real location Toronto, Canada, in October 1998. It is not based on one identifiable murder. No real victim, offender, or historical homicide is depicted.
+
+### Mara Ellis
+
+| Field | Canon |
+| --- | --- |
+| Name / identifier | Mara Ellis / `mara` |
+| Age | 29 |
+| Location / year | Toronto, Canada / 1998 |
+| Occupation | Employee at a small independent photo lab |
+| Living situation | Lives alone in a modest apartment |
+| Personality | Observant, practical, somewhat private, dislikes confrontation |
+| Interests | Enjoys photography but does not consider herself an artist |
+| Habits | Keeps small receipts, notes, and undeveloped film longer than necessary |
+| Relationships | Maintains close contact with her older sister Rachel; works with Samir Patel |
+| Continuity rule | Her ordinary life is established without foreknowledge or horror-protagonist behavior |
+
+### Supporting characters
+
+| Character | Role and canonical purpose |
+| --- | --- |
+| Rachel Ellis | Mara's older sister; establishes family connection, routine, personal belongings, and person-centered remembrance |
+| Samir Patel | Mara's coworker; establishes photo-lab life and lends her the red umbrella during heavy rain |
+| Caleb Ross | Building superintendent; initially ordinary and helpful, later contradicted by timeline and physical evidence; ultimately arrested and convicted |
+| Documentary record | Neutral post-crime investigative voice, not a superhero detective or player avatar |
+
+Do not expand the M1 cast unless a concrete requirement cannot be met otherwise.
+
+### Locations
+
+| Location | Purpose / visual treatment |
+| --- | --- |
+| World map | Reusable anthology shell; temporary abstract map with one active Toronto node |
+| Bellweather Photo Lab | Mara's workplace context; referenced rather than separately staged in M1 |
+| Mara's apartment/building | Ordinary victim-perspective space; entry, answering machine, film, note, latch, corridor |
+| Commercial service lane | Next-morning discovery; implied through framing and reaction without graphic imagery |
+| Investigation record | Abstract documentary panels for timeline, evidence, interpretation, and resolution |
+
+### Narrative devices
+
+**Red umbrella:** Samir lends it to Mara during heavy rain. The player sees it drying inside her entrance before it becomes evidence. A tenant places Mara entering the building with it; its later absence and recovery from maintenance storage contribute to exposing Caleb's contradictory account. It is one corroborating item, not a magical solution.
+
+**Answering machine:** Rachel leaves an ordinary Sunday-dinner reminder. Caleb leaves a mundane maintenance message saying he will inspect the sticking latch before eight. The preserved timing and wording later contradict his denial of a planned visit but do not solve the case alone.
+
+**Film envelope and refrigerator note:** These establish Mara's photography, habits, family plans, and unfinished ordinary life. The film envelope's movement later corroborates other evidence.
+
+### M1 timeline
+
+| Time | Event | Status |
+| --- | --- | --- |
+| October 1998, 6:35 p.m. | Mara leaves the photo lab with Samir's red umbrella | Known fact in reconstruction |
+| 7:03 p.m. | A tenant sees Mara enter her building with the umbrella | Known fact in reconstruction |
+| 7:08 p.m. | Caleb's maintenance message is recorded | Known fact |
+| Before 8:00 p.m. | Caleb is expected to return to inspect the latch | Supported by recording and Mara's experience |
+| 7:56 p.m. onward | Incident threshold and probable incident window | Exact physical sequence deliberately not depicted |
+| Following morning | Suspicious human remains are discovered on a municipal route | Known fact; no graphic presentation |
+| Following months | Statements, access records, recovered property, trace evidence, and testimony converge | Investigative reconstruction |
+| Later judicial outcome | Caleb is arrested, tried, and convicted | Fictional case outcome |
+
+### M1 route and state model
+
+The prototype is a primarily linear case with attention choices, evidence-order choice, and a guided interpretation question. Incident outcome does not branch. Wrong interpretation returns a restrained explanation and another attempt. Completion returns to the world map.
+
+| Variable | Type/default | Meaning |
+| --- | --- | --- |
+| `m1_red_umbrella_seen` | Boolean / `False` | Player inspected the umbrella in Mara's apartment |
+| `m1_answering_machine_checked` | Boolean / `False` | Player heard Rachel's and Caleb's messages |
+| `m1_photo_checked` | Boolean / `False` | Player inspected Mara's film envelope |
+| `m1_kitchen_note_seen` | Boolean / `False` | Player read Mara's ordinary reminder note |
+| `m1_case_completed` | Boolean / `False` | Current playthrough completed the case |
+
+All are ordinary save-state variables declared with `default`; none is persistent cross-save metadata.
+
+### M1 ending
+
+The case establishes Caleb's contradictory accounts, corroborating evidence, arrest, and conviction without recreating crime mechanics. The final reflection returns to Mara's photographs, relationship with Rachel, small habits, and unfinished plans. It repeats the fictional-composite notice before returning to the map.
+
+## Continuity and editorial rules
+
+- Check character knowledge, chronology, route state, source status, and established details before writing.
+- A character cannot act on information they have not learned.
+- Distinguish known fact, inference, unconfirmed interpretation, allegation, and dramatized reconstruction.
+- Evidence conflicts must be represented honestly rather than flattened into certainty.
+- Authored dialogue is not rewritten merely for technical cleanup.
+- Canon changes belong in the log below.
 
 ## Content boundaries
 
-| Topic | Allowed / restricted / excluded | Handling notes |
-| --- | --- | --- |
-| TBD | TBD | TBD |
+| Topic | Boundary |
+| --- | --- |
+| Homicide and human remains | May be discussed or strongly implied with a restrained content notice |
+| Graphic gore / prolonged assault | Excluded by default; requires explicit future documentary-purpose decision |
+| Criminal procedure details | Only what is necessary for narrative understanding; no instructional treatment |
+| Victim dignity and surviving relatives | Mandatory consideration, especially for future real cases |
+| Real-case allegations and disputed theories | Must be sourced, qualified, and never presented as settled fact without authority |
+| Sexual violence, minors, hate crimes, suicide, and other sensitive topics | Treatment and rating remain TBD; require case-specific editorial review |
 
 ## Open canon questions
 
-- TBD
+- Final project title
+- Primary language and localization strategy
+- Target rating and detailed content policy
+- First researched real case and case-selection criteria
+- Final world-map art and information architecture
+- Production visual and audio asset pipeline
+- Public-release save-compatibility policy
+
+## Reusable case outline template
+
+- **Case status:** documented real case / clearly identified fictional composite
+- **Location and period:** TBD
+- **Authoritative sources and disputed facts:** TBD before real-case production
+- **Victim-perspective purpose and ordinary details:** TBD
+- **Incident threshold:** TBD, restrained by default
+- **Discovery framing:** TBD
+- **Evidence/timeline/contradictions:** TBD
+- **Truth or current best reconstruction:** TBD
+- **Legal/investigative outcome:** TBD
+- **Victim memorial and emotional closure:** TBD
+- **Media provenance by asset:** TBD
 
 ## Retcon / canon-change log
 
 | Date | Decision | Previous canon | New canon | Affected content |
 | --- | --- | --- | --- | --- |
-| TBD | No canon changes recorded | — | — | — |
+| 2026-09-04 | Establish M1 product and prototype canon | Product/story fields were TBD | Documentary true-crime anthology model and fictional M1 case canon accepted | Story Bible, M1 implementation, roadmap/status/decisions |
 

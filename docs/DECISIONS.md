@@ -49,3 +49,56 @@ This file records durable accepted decisions, not a task journal.
 - **Consequences:** Missing canon is reported or narrowly marked TBD rather than silently invented; authored canon changes are recorded.
 - **Supersedes / superseded by:** None
 
+## D005 — Use a dual-perspective case structure
+
+- **Status:** Accepted
+- **Date:** 2026-09-04
+- **Context:** The anthology needs empathy before investigation and a repeatable dramatic form.
+- **Decision:** The default case model follows the victim before the crime, then changes to a third-person investigation after the crime.
+- **Consequences:** Earlier ordinary details can be reinterpreted as evidence; exact scene counts may vary without discarding the two-perspective model.
+- **Supersedes / superseded by:** None
+
+## D006 — Adopt a victim-first editorial principle
+
+- **Status:** Accepted
+- **Date:** 2026-09-04
+- **Context:** True-crime presentation can reduce victims to objects of violence.
+- **Decision:** “The victim is a person first and a case second.” Each completed case establishes ordinary life and provides person-centered closure.
+- **Consequences:** Spectacle does not take priority over dignity, continuity, relationships, or human consequences.
+- **Supersedes / superseded by:** None
+
+## D007 — Keep violence presentation restrained
+
+- **Status:** Accepted
+- **Date:** 2026-09-04
+- **Context:** Disturbing cases can be understood without gratuitous depiction.
+- **Decision:** Graphic violence, prolonged assault recreation, and procedural killing detail are not the default language. Victim play normally ends at the incident threshold; discovery favors implication and aftermath.
+- **Consequences:** Graphic material requires a later explicit decision with a clear documentary purpose.
+- **Supersedes / superseded by:** None
+
+## D008 — Prove the format with a fictional composite case
+
+- **Status:** Accepted
+- **Date:** 2026-09-04
+- **Context:** The narrative and technical format should be validated before adapting real deaths.
+- **Decision:** M1 uses only `The Red Umbrella`, an unmistakably fictional composite set in Toronto in October 1998. Real-case production requires prior research and provenance work.
+- **Consequences:** No real victim, offender, or historical homicide is represented by M1, and no second case is introduced.
+- **Supersedes / superseded by:** None
+
+## D009 — Distinguish authentic and reconstructed media
+
+- **Status:** Accepted
+- **Date:** 2026-09-04
+- **Context:** Documentary presentation must not manufacture false evidence or provenance.
+- **Decision:** Authentic archival, recreated/dramatized, AI-generated reconstruction, and original game media remain explicitly distinguishable.
+- **Consequences:** AI/recreated imagery cannot be presented as authentic archival, police, press, or crime-scene material; credits and case sources must preserve provenance.
+- **Supersedes / superseded by:** None
+
+## D010 — Favor interactive documentary over detective simulation
+
+- **Status:** Accepted
+- **Date:** 2026-09-04
+- **Context:** Interaction should support narrative attention without requiring a police simulator or large systems architecture.
+- **Decision:** Use light object, evidence, timeline, and interpretation interactions to increase presence, memory, pacing, and understanding.
+- **Consequences:** Avoid unrelated minigames, complex inventory, forensic engines, omnipotent detective framing, and historical game-over puzzles.
+- **Supersedes / superseded by:** None
