@@ -1,0 +1,49 @@
+# Directories that Ren'Py changes files in.
+/game/saves/
+/game/cache/
+
+# Compiled script files.
+*.rpyc
+*.rpymc
+
+# Files Ren'Py can generate.
+/game/**/*.bak
+/game/**/*.new
+/game/**/*.old
+/errors.txt
+/files.txt
+/image_cache.txt
+/log.txt
+/save_dump.txt
+/traceback.txt
+/dialogue.tab
+/dialogue.txt
+/strings.json
+
+# Build and distribution output.
+/build/
+/dist/
+
+# Python tooling output.
+__pycache__/
+*.py[cod]
+
+# Editors and operating systems.
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local configuration, SDK paths, secrets, and signing credentials.
+.env
+.env.*
+.renpy-sdk-path
+local.properties
+*.key
+*.keystore
+*.jks
+*.p12
+*.pfx
+*.pem
+*.mobileprovision
