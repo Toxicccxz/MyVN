@@ -12,6 +12,7 @@ This repository is a Ren'Py visual novel targeting Ren'Py 8.5.3, with Windows as
 - `docs/ROADMAP.md` owns planned milestones.
 - `docs/STATUS.md` owns the actual current project state.
 - `docs/DECISIONS.md` records durable decisions future work should not repeatedly reopen.
+- `docs/ASSET_PROVENANCE.md` owns source, usage, generation, and approval-stage records for visual assets.
 - The actual `.rpy` implementation owns actual implemented runtime behavior.
 
 If documentation and implementation conflict, inspect the surrounding context and report or resolve the discrepancy deliberately. Never silently choose one source.
@@ -54,6 +55,8 @@ image cg ch01_door_open = "images/cg/ch01_door_open.webp"
 ```
 
 Keep original art and audio safe; do not destructively overwrite source assets without explicit user instruction. Do not silently treat placeholders as final. Track third-party licensing and provenance before release.
+
+AI-generated reconstruction art must be labeled in player-facing presentation and registered in `docs/ASSET_PROVENANCE.md`. Painted text, approximate map geography, or generated document marks are never authoritative story data.
 
 ## Audio
 

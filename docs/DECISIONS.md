@@ -102,3 +102,12 @@ This file records durable accepted decisions, not a task journal.
 - **Decision:** Use light object, evidence, timeline, and interpretation interactions to increase presence, memory, pacing, and understanding.
 - **Consequences:** Avoid unrelated minigames, complex inventory, forensic engines, omnipotent detective framing, and historical game-over puzzles.
 - **Supersedes / superseded by:** None
+
+## D011 — Label M1 generated reconstruction art consistently
+
+- **Status:** Accepted
+- **Date:** 2026-09-04
+- **Context:** M1 now uses fictional AI-generated imagery in a documentary presentation, so provenance must remain visible and unambiguous.
+- **Decision:** Label player-facing M1 reconstruction imagery `AI-GENERATED DRAMATIZED RECONSTRUCTION`, keep factual text and interactive geography programmatic, and register every asset in `docs/ASSET_PROVENANCE.md`.
+- **Consequences:** Generated imagery cannot be mistaken for archival evidence; painted text and map detail never establish case facts; prototype art still requires public-release review.
+- **Supersedes / superseded by:** Extends D009

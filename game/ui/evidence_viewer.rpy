@@ -37,9 +37,17 @@ screen m1_evidence_viewer(evidence_items):
         padding (48, 42)
 
         vbox:
-            spacing 30
+            spacing 24
             text evidence_items[selected_evidence][0] size 37 color "#d9d0c2"
-            text evidence_items[selected_evidence][1] size 27 color "#c4cbd0" line_spacing 10
+            hbox:
+                spacing 34
+                frame:
+                    xsize 620
+                    ysize 390
+                    background Solid("#080d10")
+                    padding (10, 10)
+                    add evidence_items[selected_evidence][1] xysize (600, 338) xalign 0.5 yalign 0.5
+                text evidence_items[selected_evidence][2] xsize 470 size 23 color "#c4cbd0" line_spacing 7
 
     textbutton "RETURN TO INVESTIGATION":
         id "m1_evidence_return"

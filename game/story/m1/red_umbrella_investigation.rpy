@@ -1,18 +1,22 @@
 define m1_evidence_items = [
     (
         "RED UMBRELLA",
+        "m1_evidence_red_umbrella",
         "KNOWN FACT\nSamir Patel lent Mara a red umbrella at the photo lab. A tenant saw Mara carry it into her building. It was not in her apartment when police searched it.\n\nINFERENCE\nMara returned home after work, despite the earliest account suggesting otherwise.\n\nUNCONFIRMED\nWho removed the umbrella, and when."
     ),
     (
         "ANSWERING-MACHINE TAPE",
+        "m1_evidence_answering_machine",
         "KNOWN FACT\nAt 7:08 p.m., Caleb Ross left a message saying he would check Mara's sticking door latch before eight. The original cassette remained in the machine.\n\nINFERENCE\nHis contact with Mara that evening was planned, not accidental.\n\nUNCONFIRMED\nWhether Mara heard the message before he arrived."
     ),
     (
         "FILM ENVELOPE",
+        "m1_evidence_film_envelope",
         "KNOWN FACT\nMara brought home an unfinished roll from the photo lab. The envelope bears the lab date stamp and her handwriting.\n\nINFERENCE\nThe roll was among the ordinary objects she intended to sort that evening.\n\nUNCONFIRMED\nWhy the envelope later left the apartment."
     ),
     (
         "WITNESS STATEMENTS",
+        "m1_evidence_witness_statement",
         "KNOWN FACT\nA tenant saw Mara enter with a red umbrella shortly after seven. Caleb first said he never visited her door and later said he saw her leave carrying the same umbrella after eight.\n\nINFERENCE\nThe two accounts cannot both describe the umbrella's movements accurately.\n\nUNCONFIRMED\nWhich detail the tenant may have remembered imperfectly."
     ),
 ]
@@ -109,7 +113,9 @@ label m1_resolution:
 
     m1_record "The investigation continues for months, not minutes. Statements are retaken. Maintenance access records are compared with the answering-machine tape and witness times."
     m1_record "Caleb changes his account: first Mara never returned, then she returned but left alone, then his visit happened earlier than the recorded message."
+    scene m1_investigation_maintenance_storage with dissolve
     m1_record "A lawful search of the building's maintenance storage recovers Samir's red umbrella and Mara's marked film envelope among items Caleb controlled."
+    scene m1_bg_investigation with dissolve
     m1_record "Those objects do not stand alone. Trace evidence, access records, and independent testimony corroborate the timeline and link Caleb to Mara after his claimed final contact."
     m1_record "Investigators conclude that he used the expected maintenance visit to approach her. The exact physical sequence is not recreated here."
     m1_record "Caleb Ross is arrested. At trial, the recording, recovered property, timeline evidence, and corroborating forensic findings establish accountability. He is convicted."

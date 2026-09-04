@@ -37,7 +37,8 @@ The scripts prefer the SDK's bundled Windows Python and fall back to `python.exe
 - [Roadmap](docs/ROADMAP.md)
 - [Current status](docs/STATUS.md)
 - [Decision log](docs/DECISIONS.md)
+- [Asset provenance](docs/ASSET_PROVENANCE.md)
 
 ## Current vertical slice
 
-M1 provides a focused 10–15 minute flow: world-map selection, victim-perspective ordinary life, a restrained incident threshold and discovery, evidence/timeline interpretation, resolution, memorial, and return to the map. It uses only labeled Ren'Py-native visual placeholders and no third-party crime media. Engine lint, automated-test syntax, and runtime validation remain blocked until `RENPY_SDK` is configured.
+M1 provides a focused 10–15 minute flow: world-map selection, victim-perspective ordinary life, a restrained incident threshold and discovery, evidence/timeline interpretation, resolution, memorial, and return to the map. Its complete prototype visual pass uses clearly labeled, fictional AI-generated dramatized reconstructions and no third-party crime media; provenance is recorded per asset. Engine validation depends on a configured Ren'Py 8.5.3 SDK.

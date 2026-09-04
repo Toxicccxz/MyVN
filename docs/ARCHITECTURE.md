@@ -47,12 +47,16 @@ Ren'Py
 - `game/ui/` owns project-specific screens and styles. Stock `screens.rpy` and `gui.rpy` remain in place until a real customization requires change.
 - `game/images/`, `game/audio/`, and `game/fonts/` own runtime assets, organized semantically as the asset set grows.
 - `game/tests/` owns isolated Ren'Py automated testcases for durable player flows and regression-prone behavior.
+- `reference/visual/` owns non-runtime identity and continuity references; nothing there is loaded by Ren'Py.
+- `docs/ASSET_PROVENANCE.md` owns the source type, usage basis, fictional-person status, prompt summary, and approval stage for visual assets.
 
 The anthology shell is implemented with ordinary Ren'Py screens under `game/ui/`: the world-map screen selects a case and returns a semantic result to story flow; the evidence viewer and timeline present investigation information without owning story outcomes. Case narrative remains in `game/story/`, and completion remains ordinary `default` playthrough state. Adding a future case should extend the shell without introducing a map engine, backend, or content database unless scale later proves one necessary.
 
 Story labels are globally unique and semantic. Branches should make divergence and convergence easy to read. Use `call` for returning subflows and `jump` for intentional one-way transfer.
 
 Explicit image definitions are useful when they strengthen semantic asset identity. Do not add `layeredimage` until the actual sprite workflow needs it, and never guess asset paths.
+
+M1 runtime artwork is stored by narrative purpose under `game/images/m1/` and mapped semantically in `game/definitions/images.rpy`. Generated pixels are presentation only: programmatic labels, evidence descriptions, timeline text, and the Toronto screen node remain authoritative. This prevents painted pseudo-text or approximate map geography from becoming story or navigation data.
 
 ## State and serialization
 

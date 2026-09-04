@@ -105,7 +105,7 @@ Original game artwork
 
 AI or recreated imagery must never be presented as authentic crime-scene, police, press, or historical photography. Do not use recognizable news-brand layouts or marks to manufacture false authenticity.
 
-M1 uses only clearly labeled Ren'Py-native placeholder panels. It includes no authentic archival media, third-party crime media, AI reconstruction art, or production audio.
+M1 uses only clearly labeled fictional AI-generated dramatized reconstruction art. It includes no authentic archival media, third-party crime media, or production audio. Every M1 runtime image is registered in `docs/ASSET_PROVENANCE.md` and shown with the label `AI-GENERATED DRAMATIZED RECONSTRUCTION`.
 
 ## Documentary visual direction
 
@@ -113,7 +113,8 @@ M1 uses only clearly labeled Ren'Py-native placeholder panels. It includes no au
 - Understated typography and subdued, low-gloss interface
 - Dates and locations as strong visual anchors
 - Case-file and evidence language
-- Occasional reconstruction images may be considered in future production when labeled accurately
+- Reconstruction images use a consumer-35mm documentary language: visible grain, slight softness, muted color, ambient light, and ordinary, imperfect framing
+- All AI-generated M1 imagery is visibly labeled `AI-GENERATED DRAMATIZED RECONSTRUCTION`
 - Minimal flashy game UI
 
 Avoid blood-splatter menus, pervasive police-tape clichés, excessive glitch effects, exaggerated “serial killer wall” aesthetics, fake branded news channels, and sensational tabloid styling. The project should feel closer to an interactive documentary than arcade horror.
@@ -152,6 +153,8 @@ M1 references no audio files because no production assets exist. Its sound momen
 | Interests | Enjoys photography but does not consider herself an artist |
 | Habits | Keeps small receipts, notes, and undeveloped film longer than necessary |
 | Relationships | Maintains close contact with her older sister Rachel; works with Samir Patel |
+| Visual identity | Light olive complexion; shoulder-length naturally wavy dark-brown hair; hazel-brown eyes; softly angular face; small mole near the left eyebrow; average build |
+| M1 clothing | Navy wool cardigan over a muted rust blouse with tan straight-leg trousers; denim jacket over the same muted rust blouse in the lake snapshot |
 | Continuity rule | Her ordinary life is established without foreknowledge or horror-protagonist behavior |
 
 ### Supporting characters
@@ -165,15 +168,23 @@ M1 references no audio files because no production assets exist. Its sound momen
 
 Do not expand the M1 cast unless a concrete requirement cannot be met otherwise.
 
+### M1 visual canon
+
+- **Caleb Ross:** white Canadian man in his early forties; average build; thinning sandy-brown hair; pale gray-blue eyes; rectangular face; faint under-eye lines; clean-shaven; thin wire-rim glasses; faded gray-green work jacket over a muted brown plaid shirt. His presentation is ordinary and non-theatrical rather than visually coded as threatening.
+- **Rachel Ellis:** thirty-four; light olive complexion, hazel-brown eyes, and dark-brown hair that establish family resemblance to Mara, with a distinct rounder jaw, broader nose, faint smile lines, and practical chin-length bob. Her reference clothing is an oatmeal knit sweater over a muted blue shirt.
+- **Mara/Rachel resemblance:** strong enough to read as sisters, never as duplicates. Their separate facial structure, age, hairstyle, and clothing must remain visible.
+- **Unnamed sanitation worker:** a wholly fictional, anonymous municipal worker. The worker's design is not based on the person in the external style-reference photograph.
+- M1 reconstruction art remains restrained, non-glamorous, and free of gore. Evidence and pseudo-documents must not contain invented readable official text.
+
 ### Locations
 
 | Location | Purpose / visual treatment |
 | --- | --- |
-| World map | Reusable anthology shell; temporary abstract map with one active Toronto node |
+| World map | Reusable anthology shell; generated atlas texture with one programmatically positioned active Toronto node; the node, not painted geography, is authoritative |
 | Bellweather Photo Lab | Mara's workplace context; referenced rather than separately staged in M1 |
 | Mara's apartment/building | Ordinary victim-perspective space; entry, answering machine, film, note, latch, corridor |
 | Commercial service lane | Next-morning discovery; implied through framing and reaction without graphic imagery |
-| Investigation record | Abstract documentary panels for timeline, evidence, interpretation, and resolution |
+| Investigation record | Generated documentary workspace and evidence photographs, with programmatic text retaining authority over facts and interpretation |
 
 ### Narrative devices
 
@@ -241,7 +252,7 @@ The case establishes Caleb's contradictory accounts, corroborating evidence, arr
 - Target rating and detailed content policy
 - First researched real case and case-selection criteria
 - Final world-map art and information architecture
-- Production visual and audio asset pipeline
+- Production audio pipeline and public-release review of the prototype visual pipeline
 - Public-release save-compatibility policy
 
 ## Reusable case outline template
@@ -263,4 +274,4 @@ The case establishes Caleb's contradictory accounts, corroborating evidence, arr
 | Date | Decision | Previous canon | New canon | Affected content |
 | --- | --- | --- | --- | --- |
 | 2026-09-04 | Establish M1 product and prototype canon | Product/story fields were TBD | Documentary true-crime anthology model and fictional M1 case canon accepted | Story Bible, M1 implementation, roadmap/status/decisions |
-
+| 2026-09-04 | Establish M1 visual canon and reconstruction label | M1 used abstract placeholders and visual identities were unspecified | Fictional identity references, 35mm documentary direction, and the `AI-GENERATED DRAMATIZED RECONSTRUCTION` label are canonical for M1 | Story Bible, M1 art, UI, provenance register |

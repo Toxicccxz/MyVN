@@ -11,6 +11,7 @@ label world_map_entry:
 
 label m1_case_introduction:
     scene m1_bg_notice
+    show screen m1_reconstruction_badge("TORONTO • OCTOBER 1998")
     window show
 
     centered "{size=52}TORONTO, CANADA{/size}\n{size=34}October 1998{/size}"
@@ -30,4 +31,3 @@ label m1_case_introduction:
 
         "Return to World Map":
             jump world_map_entry
-

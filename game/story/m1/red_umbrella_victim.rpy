@@ -29,33 +29,41 @@ label m1_apartment_exploration:
     menu:
         "Inspect the red umbrella" if not m1_red_umbrella_seen:
             $ m1_red_umbrella_seen = True
+            scene m1_detail_red_umbrella with dissolve
             "The umbrella is too bright for Mara's apartment: red nylon, black handle, one bent spoke."
             "A strip of masking tape around the shaft reads SAMIR in block letters. She leaves it open to dry beside the door."
             mara "Tomorrow. I won't forget."
+            scene m1_bg_apartment with dissolve
             jump m1_apartment_exploration
 
         "Check the answering machine" if not m1_answering_machine_checked:
             $ m1_answering_machine_checked = True
+            scene m1_detail_answering_machine with dissolve
             "The machine clicks. The first message carries Rachel's familiar impatience."
             rachel "Mara, Sunday dinner. You said you'd bring those lake pictures, and I am recording this so you can't claim I never reminded you. Call me when you're in."
             "Mara reaches for the phone, then notices the second message light."
             caleb "Ms. Ellis, Caleb downstairs. I found your note about the sticking latch. I'll come by after I finish the second floor—before eight. Should only take a minute."
             "The tape stops with a soft mechanical clack."
             mara "Tea first. Then Rachel. Then the door."
+            scene m1_bg_apartment with dissolve
             jump m1_apartment_exploration
 
         "Examine the roll of film" if not m1_photo_checked:
             $ m1_photo_checked = True
+            scene m1_detail_film_envelope with dissolve
             "An unfinished roll sits in a yellow lab envelope. Mara has written: RACHEL — LAKE / STREET AFTER RAIN."
             "She holds one negative strip toward the lamp. A blurred streetlight floats in the frame like a pale moon."
             mara "Not art. Just proof I looked up once in a while."
             "She returns the envelope to the table rather than the drawer."
+            scene m1_bg_apartment with dissolve
             jump m1_apartment_exploration
 
         "Read the note on the refrigerator" if not m1_kitchen_note_seen:
             $ m1_kitchen_note_seen = True
+            scene m1_detail_refrigerator_note with dissolve
             "A grocery receipt is pinned beneath a souvenir magnet. On its back Mara has written: MILK. CALL RACHEL. RETURN LIBRARY BOOK."
             "The library book is already waiting by the door. She crosses out MILK and leaves the other two lines untouched."
+            scene m1_bg_apartment with dissolve
             jump m1_apartment_exploration
 
         "Put the kettle on" if m1_red_umbrella_seen and m1_answering_machine_checked and m1_photo_checked and m1_kitchen_note_seen:
@@ -68,6 +76,7 @@ label m1_subtle_unease:
 
     caleb "Ms. Ellis? Building maintenance. It's Caleb."
 
+    scene m1_caleb_first_visit with dissolve
     "Mara opens the door on its chain. Caleb stands beneath the unlit corridor fixture with a screwdriver and a folded work sheet."
 
     caleb "Bulb is done. Your latch was next on my list. Still catching?"
@@ -81,6 +90,8 @@ label m1_subtle_unease:
     mara "All right. Knock loudly. The machine is louder than the hallway."
 
     "He leaves. The corridor light holds steady for several seconds, then flickers once."
+
+    scene m1_bg_apartment with dissolve
 
     menu:
         "Test the latch":
@@ -108,6 +119,7 @@ label m1_incident_threshold:
 
     menu:
         "Look through the peephole":
+            scene m1_incident_peephole_caleb with dissolve
             "The corridor light is dark again. She can make out a shoulder, the edge of a work jacket, and something pale held near the door."
             mara "Caleb?"
             caleb "Found the right screw."
@@ -121,6 +133,7 @@ label m1_incident_threshold:
             "Mara opens the door as far as the chain permits. The corridor bulb is out; Caleb waits beside his small maintenance case."
             caleb "Bad connection after all. I can still fix your latch."
 
+    scene m1_bg_hallway with dissolve
     "Mara rests one hand on the chain. The answering machine begins to rewind behind her."
     "Something shifts in the dark beyond the door—too close, too quickly."
 
@@ -135,7 +148,7 @@ label m1_incident_threshold:
 
 label m1_discovery:
     scene m1_bg_discovery with dissolve
-    show screen m1_reconstruction_badge("MUNICIPAL ROUTE • RECONSTRUCTION PLACEHOLDER")
+    show screen m1_reconstruction_badge("MUNICIPAL ROUTE • NEXT MORNING")
 
     "A municipal sanitation worker backs a collection truck into the service lane. Rainwater has gathered in shallow dents in the pavement."
     "One dumpster lid is not fully closed. A torn plastic bag is caught along its rim."
@@ -143,9 +156,11 @@ label m1_discovery:
 
     menu:
         "Lift the lid":
+            scene m1_discovery_worker_opens with dissolve
             "The lid rises several inches."
 
     "The worker freezes. Whatever is inside is immediately wrong—not discarded property, not something to move with a gloved hand."
+    scene m1_discovery_worker_reaction with dissolve
     "The lid falls shut. The worker steps back and calls for emergency services."
 
     hide screen m1_reconstruction_badge
@@ -154,4 +169,3 @@ label m1_discovery:
     m1_record "The perspective now shifts from Mara's lived evening to an investigative reconstruction assembled over time."
 
     jump m1_early_investigation
-
